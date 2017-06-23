@@ -5,7 +5,6 @@ class Root
 {
 protected:
 	double a,b;
-	void test();
 public:
 	void FindRoot();
 	virtual double f(double) = 0;	
@@ -37,7 +36,6 @@ private:
 	{
 		return x*x*x-5*x*x+16*x-80;
 	}
-	double c;
 public:
 	A(double x=0,double y=0):Root(x,y){};
 };
